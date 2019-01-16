@@ -1,6 +1,6 @@
 <?php
 
-namespace texasbaptists\craft3freeformext;
+namespace texasbaptists\craftfreeformext;
 namespace Craft;
 
 class FreeformExt extends BasePlugin {

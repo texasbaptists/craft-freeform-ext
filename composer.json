@@ -1,5 +1,5 @@
 {
-  "name": "texasbaptists/craft3-freeform-ext",
+  "name": "texasbaptists/craft-freeform-ext",
   "description": "Texas Baptists Craft 3 Freeform Extension",
   "version": "1.0.0",
   "type": "craft-plugin",
@@ -13,21 +13,21 @@
   ],
   "support": {
     "email": "webcontent@texasbaptists.org",
-    "issues": "https://github.com/texasbaptists/craft3-freeform-ext/issues?state=open",
-    "source": "https://github.com/texasbaptists/craft3-freeform-ext",
-    "docs": "https://github.com/texasbaptists/craft3-freeform-ext"
+    "issues": "https://github.com/texasbaptists/craft-freeform-ext/issues?state=open",
+    "source": "https://github.com/texasbaptists/craft-freeform-ext",
+    "docs": "https://github.com/texasbaptists/craft-freeform-ext"
   },
   "require": {
     "craftcms/cms": "^3.0.0"
   },
   "autoload": {
     "psr-4": {
-      "texasbaptists\\craft3freeformext\\": "src/"
+      "texasbaptists\\craftfreeformext\\": "src/"
     }
   },
   "extra": {
-    "handle": "craft3freeformext",
-    "class": "craft3freeformext",
+    "handle": "craftfreeformext",
+    "class": "craftfreeformext",
     "basePath": "/",
     "name": "Texas Baptists Craft 3 Freeform Extension"
   }
