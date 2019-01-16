@@ -1,4 +1,4 @@
-# texasbaptists/craft3-freeform-ext Changelog
+# texasbaptists/craft-freeform-ext Changelog
 
 All notable changes to this project will be documented in this file.
 

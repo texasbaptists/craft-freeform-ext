@@ -1,4 +1,4 @@
-# texasbaptists/craft3-freeform-ext plugin for Craft CMS 3.x
+# texasbaptists/craft-freeform-ext plugin for Craft CMS 3.x
 
 Texas Baptists Craft 3 Freeform Extension
 
@@ -18,23 +18,23 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require texasbaptists/craft3-freeform-ext
+        composer require texasbaptists/craft-freeform-ext
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for txb/craft3-freeform-ext.
 
-## texasbaptists/craft3-freeform-ext Overview
+## texasbaptists/craft-freeform-ext Overview
 
 -Insert text here-
 
-## Configuring texasbaptists/craft3-freeform-ext
+## Configuring texasbaptists/craft-freeform-ext
 
 -Insert text here-
 
-## Using texasbaptists/craft3-freeform-ext
+## Using texasbaptists/craft-freeform-ext
 
 -Insert text here-
 
-## texasbaptists/craft3-freeform-ext Roadmap
+## texasbaptists/craft-freeform-ext Roadmap
 
 Some things to do, and ideas for potential features:
 
