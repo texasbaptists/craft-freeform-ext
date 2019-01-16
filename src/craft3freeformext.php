@@ -3,7 +3,7 @@
 namespace texasbaptists\craftfreeformext;
 namespace Craft;
 
-class FreeformExt extends BasePlugin {
+class craftfreeformext extends BasePlugin {
     public function init() {
         parent::init();
 
