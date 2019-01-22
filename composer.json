@@ -1,34 +1,40 @@
 {
-  "name": "texasbaptists/craft-freeform-ext",
-  "description": "Texas Baptists Craft 3 Freeform Extension",
-  "version": "1.0.0",
-  "type": "craft-plugin",
-  "keywords": ["texasbaptists", "craft", "freeform", "extension"],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Texas Baptists",
-      "homepage": "https://texasbaptists.org"
+    "name": "texasbaptists/craft-freeform-ext",
+    "description": "Texas Baptists Craft Freeform Extension",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craftfreeformext"
+    ],
+    "support": {
+        "docs": "https://github.com/texasbaptists/craft-freeform-ext/blob/master/README.md",
+        "issues": "https://github.com/texasbaptists/craft-freeform-ext/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Texas Baptists",
+            "homepage": "texasbaptists.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "texasbaptists\\craftfreeformext\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CraftFreeformExt",
+        "handle": "craft-freeform-ext",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/texasbaptists/craft-freeform-ext/master/CHANGELOG.md",
+        "class": "texasbaptists\\craftfreeformext\\CraftFreeformExt"
     }
-  ],
-  "support": {
-    "email": "webcontent@texasbaptists.org",
-    "issues": "https://github.com/texasbaptists/craft-freeform-ext/issues?state=open",
-    "source": "https://github.com/texasbaptists/craft-freeform-ext",
-    "docs": "https://github.com/texasbaptists/craft-freeform-ext"
-  },
-  "require": {
-    "craftcms/cms": "^3.0.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "texasbaptists\\craftfreeformext\\": "src/"
-    }
-  },
-  "extra": {
-    "handle": "craftfreeformext",
-    "class": "craftfreeformext",
-    "basePath": "/",
-    "name": "Texas Baptists Craft 3 Freeform Extension"
-  }
 }
