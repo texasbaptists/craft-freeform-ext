@@ -91,6 +91,7 @@ class CraftFreeformExt extends Plugin
 				$post = $_POST;
 				$key = 'recordTypeId';
 				$event->addValue($key, $post[$key]);
+				$event->addValue('salesforceCompany', 'Individual');
 				//$values = $event->getValues();
 			}
 		);
