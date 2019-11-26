@@ -88,11 +88,13 @@ class CraftFreeformExt extends Plugin
 			function (PushEvent $event) {
 				//$integration = $event->getIntegration();
 				//$values = $event->getValues();
-				$post = $_POST;
-				$key = 'recordTypeId';
-				$event->addValue($key, $post[$key]);
-				$event->addValue('salesforceCompany', 'Individual');
-				//$values = $event->getValues();
+				$event->addValue('recordTypeId', $_POST['recordTypeId']);
+				if ($_POST['salesforceCompany'] ?? false) {
+					$event->addValue('salesforceCompany', $_POST['salesforceCompany']);
+				} else {
+					$event->addValue('salesforceCompany', 'Individual');
+				}
+				//$event->addValue('salesforceCompany', 'Individual');
 			}
 		);
 
