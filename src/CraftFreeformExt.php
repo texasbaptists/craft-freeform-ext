@@ -86,12 +86,14 @@ class CraftFreeformExt extends Plugin
 			CrmService::class,
 			CrmService::EVENT_BEFORE_PUSH,
 			function (PushEvent $event) {
-
-				$post = $_POST;
-				$key = 'recordTypeId';
-				$event->addValue($key, $post[$key]);
-
-				$event->addValue('Company', 'Individual');
+				// how to get the sf integration: $integration = $event->getIntegration();
+				// how to get the values: $values = $event->getValues();
+				$event->addValue('recordTypeId', $_POST['recordTypeId']);
+				if ($_POST['company'] ?? false) {
+					$event->addValue('company', $_POST['company']);
+				} else {
+					$event->addValue('company', 'Individual');
+				}
 			}
 		);
    }
