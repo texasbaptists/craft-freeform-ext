@@ -89,10 +89,10 @@ class CraftFreeformExt extends Plugin
 				// how to get the sf integration: $integration = $event->getIntegration();
 				// how to get the values: $values = $event->getValues();
 				$event->addValue('recordTypeId', $_POST['recordTypeId']);
-				if ($_POST['company'] ?? false) {
-					$event->addValue('company', $_POST['company']);
+				if ($_POST['Company'] ?? false) {
+					$event->addValue('Company', $_POST['Company']);
 				} else {
-					$event->addValue('company', 'Individual');
+					$event->addValue('Company', 'Individual');
 				}
 			}
 		);
