@@ -2,8 +2,6 @@
 
 Texas Baptists Craft Freeform Extension
 
-![Screenshot](resources/img/plugin-logo.png)
-
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-beta.23 or later.
@@ -24,20 +22,12 @@ To install the plugin, follow these instructions.
 
 ## CraftFreeformExt Overview
 
--Insert text here-
+This plugin adds Company=Individual and a RecordTypeId to CRM Integrations in Freeform.
 
 ## Configuring CraftFreeformExt
 
--Insert text here-
-
-## Using CraftFreeformExt
-
--Insert text here-
+In Freeform, add a hidden field with the handle `recordTypeId`. When building a form that needs to go to Salesforce as a Lead, add this field with the recordTypeId that Salesforce needs to make the Lead Type correct.  
 
 ## CraftFreeformExt Roadmap
 
-Some things to do, and ideas for potential features:
-
-* Release it
-
-Brought to you by [Texas Baptists](texasbaptists.com)
+Brought to you by [Texas Baptists](texasbaptists.org)

@@ -81,48 +81,18 @@ class CraftFreeformExt extends Plugin
 			__METHOD__
 		);
 
-		// salesforce integration
+		// Salesforce Lead Integration
 		Event::on(
 			CrmService::class,
 			CrmService::EVENT_BEFORE_PUSH,
 			function (PushEvent $event) {
-				//$integration = $event->getIntegration();
-				//$values = $event->getValues();
+
 				$post = $_POST;
 				$key = 'recordTypeId';
 				$event->addValue($key, $post[$key]);
-				$event->addValue('salesforceCompany', 'Individual');
-				//$values = $event->getValues();
+
+				$event->addValue('Company', 'Individual');
 			}
 		);
-
-		// form display
-		/*Event::on(
-			FormsService::class,
-			FormsService::EVENT_RENDER_CLOSING_TAG,
-			function (FormRenderEvent $event) {
-				$submission = $event->getElement();
-				$form       = $event->getForm();
-				// Do something with this data
-				Craft::dd($form);
-			}
-		);*/
-
-		// submissions
-		/*Event::on(
-			SubmissionsService::class,
-			SubmissionsService::EVENT_BEFORE_SUBMIT,
-			function (SubmitEvent $event) {
-				$submission = $event->getElement();
-				$form       = $event->getForm();
-				// Do something with this data
-				Craft::dd($form);
-			}
-		);*/
-
    }
-
-	// Protected Methods
-	// =========================================================================
-
 }
